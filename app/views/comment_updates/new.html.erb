@@ -1,0 +1,4 @@
+<% form_for @update do |u| %>
+    <%= u.label :comment_id, "Case Number"%>
+    <%= u.collection_select(:comment_id, Comment.all, :id, :case_number) %>
+<% end %>
