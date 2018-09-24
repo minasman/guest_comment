@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+  root 'sessions#new'
   resources :sessions
+  resources :comments
   resources :comment_updates
   resources :guests
   resources :stores
