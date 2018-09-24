@@ -10,7 +10,67 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_23_210036) do
+ActiveRecord::Schema.define(version: 2018_09_24_142228) do
+
+  create_table "comment_updates", force: :cascade do |t|
+    t.integer "comment_id"
+    t.datetime "update_date"
+    t.time "update_time"
+    t.string "update_type"
+    t.string "current_update"
+    t.string "employee_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.datetime "visit_date"
+    t.time "visit_time"
+    t.string "comment_type"
+    t.string "source"
+    t.string "urgent"
+    t.string "case_number"
+    t.string "first_issue"
+    t.string "first_issue_comment"
+    t.string "second_issue"
+    t.string "second_issue_comment"
+    t.string "third_issue"
+    t.string "third_issue_comment"
+    t.string "contact_type"
+    t.string "visit_type"
+    t.string "employee_named"
+    t.string "status"
+    t.integer "guest_id"
+    t.integer "store_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "guests", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "street_address"
+    t.string "city"
+    t.string "state"
+    t.string "zip_code"
+    t.string "phone"
+    t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "stores", force: :cascade do |t|
+    t.string "name"
+    t.string "store_number"
+    t.string "store_email"
+    t.string "street_address"
+    t.string "city"
+    t.string "state"
+    t.string "zip_code"
+    t.string "phone"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "first_name"
