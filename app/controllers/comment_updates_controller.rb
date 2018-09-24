@@ -3,5 +3,12 @@ class CommentUpdatesController < ApplicationController
 
     def new
         @update = CommentUpdate.new
+        @comment = Comment.find(params[:id])
+    end
+
+    def create
+        @update = CommentUpdate.new
+        @comment = Comment.find(params[:comment])
+        render new
     end
 end

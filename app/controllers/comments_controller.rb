@@ -22,6 +22,13 @@ class CommentsController < ApplicationController
         @comment = Comment.find(params[:id])
     end
 
+    def update
+        @update = CommentUpdate.new
+        @comment = Comment.find(params[:id])
+        @update.comment_id = @comment.id
+    end
+
+
     private
     def comment_params
         params.require(:comment).permit(:visit_date, :visit_time, :comment_type, :source, :urgent, :case_number, :first_issue, :first_issue_comment, :second_issue, :second_issue_comment, :third_issue, :third_issue_comment, :contact_type, :visit_type, :employee_named, :status, :guest_id, :store_id)
