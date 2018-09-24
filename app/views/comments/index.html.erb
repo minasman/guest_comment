@@ -1,0 +1,3 @@
+<% @comments.each do |comment| %>
+    <p><%= link_to comment.case_number, comment_path(comment) %></p><br>
+<% end %>

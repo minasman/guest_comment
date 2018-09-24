@@ -1,6 +1,6 @@
 <h1>Enter Comment Details</h1>
 <%= form_for @comment do |f| %>
-    <%= f.fields_for :guest do |guest| %>
+    <%= fields_for @guest do |guest| %>
         <%= guest.label :first_name, "First Name" %>
             <%= guest.text_field :first_name %>
         <%= guest.label :last_name, "Last Name" %>
@@ -11,7 +11,7 @@
             <%= guest.text_field :phone %><br>
     <% end %>
     <%= f.label :store_id, "Restaurant"%>
-    <%= collection_select(:store, :store_id, Store.all, :id, :store_number) %>
+    <%= f.collection_select(:store_id, Store.all, :id, :store_number) %>
     <%= f.label :visit_date, "Incident Date"%>
     <%= f.date_field :visit_date %>
     <%= f.label :visit_time, "Incident Time"%>
@@ -35,7 +35,7 @@
     <%= f.label :third_issue, "Customer Issue 1"%>
     <%= f.text_field :third_issue %><br>
     <%= f.label :third_issue_comment, "Details"%>
-    <%= text_area(:third_issue_comment, :text, size: "20x30") %><br>
+    <%= f.text_area(:third_issue_comment, size: "20x30") %><br>
     <%= f.label :contact_type, "Contact Type"%>
     <%= f.text_field :contact_type %>
     <%= f.label :visit_type, "Order Point" %>
@@ -46,3 +46,5 @@
     <%= f.text_field :status %><br>
 <%= f.submit %>
 <% end %>
+
+<a href="/sessions/destroy">Log Out</a>

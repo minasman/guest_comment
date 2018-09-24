@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+    before_action :require_log_in, except: [:new, :create, :home]
     before_action :set_user, only: [:show, :edit, :update, :destroy]
 
     def index
@@ -48,5 +49,4 @@ class UsersController < ApplicationController
         def user_params
             params.require(:user).permit(:first_name, :last_name, :username, :email, :password)
         end
-
 end
