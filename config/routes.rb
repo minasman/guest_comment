@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :sessions
   resources :comment_updates
   resources :guests
   resources :stores
