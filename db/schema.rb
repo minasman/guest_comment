@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 2018_09_24_142228) do
     t.string "contact_type"
     t.string "visit_type"
     t.string "employee_named"
-    t.string "status"
+    t.string "status", default: "Open"
     t.integer "guest_id"
     t.integer "store_id"
     t.datetime "created_at", null: false

@@ -16,7 +16,7 @@ class CreateComments < ActiveRecord::Migration[5.2]
       t.string :contact_type
       t.string :visit_type
       t.string :employee_named
-      t.string :status
+      t.string :status, default: "Open"
       t.integer :guest_id
       t.integer :store_id
       t.timestamps

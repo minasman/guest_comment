@@ -8930,3 +8930,1366 @@ Completed 200 OK in 94ms (Views: 84.9ms | ActiveRecord: 0.5ms)
 
 
   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2018-09-25 18:09:12 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 332ms (Views: 324.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2018-09-25 18:09:19 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-25 18:09:19 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 47ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-25 18:09:53 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 163ms (Views: 122.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2018-09-25 18:09:58 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vaimctC+HvSzb31RW23IFn8YnOPtYxIln8ooshmIA/WiY4X2hajU2NkQ/Q+0Ny31kaH4DKq0Xk0QmFGTA7qcgQ==", "user"=>{"username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 74ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 18:09:58 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 92ms (Views: 86.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 18:10:43 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 90ms (Views: 84.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stores" for 127.0.0.1 at 2018-09-25 18:10:44 -0500
+Processing by StoresController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.6ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 1]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 2]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 3]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 4]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 5]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 6]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 7]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 8]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 9]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 10]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 11]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 12]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 13]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 14]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 15]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 16]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 17]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 18]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 19]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 20]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 21]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 22]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 23]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 24]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 25]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 26]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 27]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 28]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 29]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 30]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 31]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 32]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 33]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 34]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 35]]
+  ↳ app/views/stores/index.html.erb:3
+  Rendered stores/index.html.erb within layouts/application (77.4ms)
+Completed 200 OK in 150ms (Views: 121.4ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 18:10:50 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 63ms (Views: 58.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2018-09-25 18:11:04 -0500
+Processing by CommentsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21
+  Rendering comments/new.html.erb within layouts/application
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/comments/new.html.erb:14
+  Rendered comments/new.html.erb within layouts/application (33.7ms)
+Completed 200 OK in 149ms (Views: 93.3ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2018-09-25 18:12:26 -0500
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Fa5tplGNmt0frnH0q/RReP/bZKakzHgDwqPJqUnXLaLo3GRxFcn/P9MLBx3z6fxiavMhENWG0jR3tNJ7SmvAWg==", "guest"=>{"first_name"=>"Bob", "last_name"=>"Smith", "email"=>"el@rye.com", "phone"=>"2108882222"}, "comment"=>{"store_id"=>"19", "visit_date"=>"2018-09-12", "visit_time"=>"05:05", "comment_type"=>"Compliment", "source"=>"800", "urgent"=>"Urgent", "case_number"=>"385867", "first_issue"=>"Speed", "first_issue_comment"=>"Slow", "second_issue"=>"", "second_issue_comment"=>"", "third_issue"=>"", "third_issue_comment"=>"", "contact_type"=>"Email", "visit_type"=>"FC", "employee_named"=>"Ariana", "status"=>""}, "commit"=>"Create Comment"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21
+  [1m[36mGuest Load (0.6ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."email" = ? LIMIT ?[0m  [["email", "el@rye.com"], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:13
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:13
+  [1m[36mGuest Create (1.7ms)[0m  [1m[32mINSERT INTO "guests" ("email", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["email", "el@rye.com"], ["created_at", "2018-09-25 23:12:26.215858"], ["updated_at", "2018-09-25 23:12:26.215858"]]
+  ↳ app/controllers/comments_controller.rb:13
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:14
+  [1m[36mGuest Update (0.4ms)[0m  [1m[33mUPDATE "guests" SET "first_name" = ?, "last_name" = ?, "phone" = ?, "updated_at" = ? WHERE "guests"."id" = ?[0m  [["first_name", "Bob"], ["last_name", "Smith"], ["phone", "2108882222"], ["updated_at", "2018-09-25 23:12:26.222410"], ["id", 5]]
+  ↳ app/controllers/comments_controller.rb:14
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:15
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/comments_controller.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:17
+  [1m[36mGuest Load (0.3ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:17
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("visit_date", "visit_time", "comment_type", "source", "urgent", "case_number", "first_issue", "first_issue_comment", "second_issue", "second_issue_comment", "third_issue", "third_issue_comment", "contact_type", "visit_type", "employee_named", "status", "guest_id", "store_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["visit_date", "2018-09-12 00:00:00"], ["visit_time", "2000-01-01 05:05:00"], ["comment_type", "Compliment"], ["source", "800"], ["urgent", "Urgent"], ["case_number", "385867"], ["first_issue", "Speed"], ["first_issue_comment", "Slow"], ["second_issue", ""], ["second_issue_comment", ""], ["third_issue", ""], ["third_issue_comment", ""], ["contact_type", "Email"], ["visit_type", "FC"], ["employee_named", "Ariana"], ["status", ""], ["guest_id", 5], ["store_id", 19], ["created_at", "2018-09-25 23:12:26.250463"], ["updated_at", "2018-09-25 23:12:26.250463"]]
+  ↳ app/controllers/comments_controller.rb:17
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:17
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 45ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 18:12:26 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 66ms (Views: 61.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2018-09-25 18:12:29 -0500
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/comments/index.html.erb:1
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mCACHE Guest Load (0.1ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mCACHE Store Load (0.0ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mCACHE Guest Load (0.1ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.1ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  Rendered comments/index.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 116ms (Views: 103.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 18:12:59 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 73ms (Views: 66.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2018-09-25 18:16:50 -0500
+Processing by CommentsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21
+  Rendering comments/new.html.erb within layouts/application
+  Rendered comments/new.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/danielhernandez/Dropbox/Flatiron/guest_comment/app/views/comments/new.html.erb:20: syntax error, unexpected ',', expecting ')'
+...ct :comment_type, ("Complaint", "Compliment", "Inquiry") );@...
+...                               ^
+/Users/danielhernandez/Dropbox/Flatiron/guest_comment/app/views/comments/new.html.erb:20: syntax error, unexpected ',', expecting ')'
+...pe, ("Complaint", "Compliment", "Inquiry") );@output_buffer....
+...                               ^):
+  
+app/views/comments/new.html.erb:20: syntax error, unexpected ',', expecting ')'
+app/views/comments/new.html.erb:20: syntax error, unexpected ',', expecting ')'
+Started GET "/comments/new" for 127.0.0.1 at 2018-09-25 18:22:50 -0500
+Processing by CommentsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21
+  Rendering comments/new.html.erb within layouts/application
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/comments/new.html.erb:14
+  Rendered comments/new.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 2, expected 4..6)):
+    18:     <%= f.time_field :visit_time %><br>
+    19:     <%= f.label :comment_type, "Type of Comment"%>
+    20:     <% choice = ["Complaint", "Compliment", "Inquiry"]%>
+    21:     <%= f.collection_select :comment_type, choice %>
+    22:     <%= f.text_field :comment_type %>
+    23:     <%= f.label :source, "Source of Comment" %>
+    24:     <%= f.text_field :source %>
+  
+app/views/comments/new.html.erb:21:in `block in _app_views_comments_new_html_erb__3622190496947156798_70201158426300'
+app/views/comments/new.html.erb:2:in `_app_views_comments_new_html_erb__3622190496947156798_70201158426300'
+Started GET "/comments/new" for 127.0.0.1 at 2018-09-25 18:24:54 -0500
+Processing by CommentsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21
+  Rendering comments/new.html.erb within layouts/application
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/comments/new.html.erb:14
+  Rendered comments/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 87ms (Views: 81.8ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rails:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rails:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rails:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rails:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rails:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rails:23
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "comment_updates"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "comment_updates" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "comment_id" integer, "update_date" datetime, "update_time" time, "update_type" varchar, "current_update" varchar, "employee_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments"[0m
+  ↳ db/schema.rb:26
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "visit_date" datetime, "visit_time" time, "comment_type" varchar, "source" varchar, "urgent" varchar, "case_number" varchar, "first_issue" varchar, "first_issue_comment" varchar, "second_issue" varchar, "second_issue_comment" varchar, "third_issue" varchar, "third_issue_comment" varchar, "contact_type" varchar, "visit_type" varchar, "employee_named" varchar, "status" varchar, "guest_id" integer, "store_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "guests"[0m
+  ↳ db/schema.rb:49
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "guests" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "street_address" varchar, "city" varchar, "state" varchar, "zip_code" varchar, "phone" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "stores"[0m
+  ↳ db/schema.rb:62
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "stores" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "store_number" varchar, "store_email" varchar, "street_address" varchar, "city" varchar, "state" varchar, "zip_code" varchar, "phone" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:62
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:75
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "username" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:75
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180924142228)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20180924134642),
+(20180924133956),
+(20180924135511),
+(20180923210036);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-09-25 23:46:29.190156"], ["updated_at", "2018-09-25 23:46:29.190156"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rails:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rails:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rails:23
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "comment_updates"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "comment_updates" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "comment_id" integer, "update_date" datetime, "update_time" time, "update_type" varchar, "current_update" varchar, "employee_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments"[0m
+  ↳ db/schema.rb:26
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "visit_date" datetime, "visit_time" time, "comment_type" varchar, "source" varchar, "urgent" varchar, "case_number" varchar, "first_issue" varchar, "first_issue_comment" varchar, "second_issue" varchar, "second_issue_comment" varchar, "third_issue" varchar, "third_issue_comment" varchar, "contact_type" varchar, "visit_type" varchar, "employee_named" varchar, "status" varchar, "guest_id" integer, "store_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "guests"[0m
+  ↳ db/schema.rb:49
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "guests" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "street_address" varchar, "city" varchar, "state" varchar, "zip_code" varchar, "phone" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "stores"[0m
+  ↳ db/schema.rb:62
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "stores" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "store_number" varchar, "store_email" varchar, "street_address" varchar, "city" varchar, "state" varchar, "zip_code" varchar, "phone" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:62
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:75
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "username" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:75
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180924142228)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20180924134642),
+(20180924133956),
+(20180924135511),
+(20180923210036);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-09-25 23:46:29.217965"], ["updated_at", "2018-09-25 23:46:29.217965"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rails:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rails:23
+  [1m[36mActiveRecord::InternalMetadata Update (0.6ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2018-09-25 23:46:29.222484"], ["key", "environment"]]
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rails:23
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rails:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rails:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "South Laredo"], ["store_number", "1480"], ["store_email", "hou.01480@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.251834"], ["updated_at", "2018-09-25 23:46:29.251834"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.8ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "SW Military"], ["store_number", "1703"], ["store_email", "hou.01703@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.261189"], ["updated_at", "2018-09-25 23:46:29.261189"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "San Pedro"], ["store_number", "1725"], ["store_email", "hou.01725@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.265828"], ["updated_at", "2018-09-25 23:46:29.265828"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.5ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "West Commerce"], ["store_number", "2962"], ["store_email", "hou.02962@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.269275"], ["updated_at", "2018-09-25 23:46:29.269275"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.5ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Southcross"], ["store_number", "3348"], ["store_email", "hou.03348@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.273868"], ["updated_at", "2018-09-25 23:46:29.273868"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.5ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wurzbach"], ["store_number", "3447"], ["store_email", "hou.03447@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.278226"], ["updated_at", "2018-09-25 23:46:29.278226"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WW White"], ["store_number", "5166"], ["store_email", "hou.05166@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.282206"], ["updated_at", "2018-09-25 23:46:29.282206"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Roosevelt"], ["store_number", "5623"], ["store_email", "hou.05623@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.285403"], ["updated_at", "2018-09-25 23:46:29.285403"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Hill Country"], ["store_number", "6661"], ["store_email", "hou.06661@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.288300"], ["updated_at", "2018-09-25 23:46:29.288300"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "West Houston"], ["store_number", "7091"], ["store_email", "hou.07091@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.291241"], ["updated_at", "2018-09-25 23:46:29.291241"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Med Center"], ["store_number", "7850"], ["store_email", "hou.07850@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.294215"], ["updated_at", "2018-09-25 23:46:29.294215"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Vance Jackson"], ["store_number", "10586"], ["store_email", "hou.10586@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.296841"], ["updated_at", "2018-09-25 23:46:29.296841"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Guilbeau"], ["store_number", "10675"], ["store_email", "hou.10675@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.299417"], ["updated_at", "2018-09-25 23:46:29.299417"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "DeZavala"], ["store_number", "12673"], ["store_email", "hou.12673@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.301790"], ["updated_at", "2018-09-25 23:46:29.301790"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Zarzamora"], ["store_number", "13364"], ["store_email", "hou.13364@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.304368"], ["updated_at", "2018-09-25 23:46:29.304368"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Broadway"], ["store_number", "14073"], ["store_email", "hou.14073@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.306774"], ["updated_at", "2018-09-25 23:46:29.306774"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM 1604"], ["store_number", "16166"], ["store_email", "hou.16166@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.309217"], ["updated_at", "2018-09-25 23:46:29.309217"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.2ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM Jones Maltzburger"], ["store_number", "17018"], ["store_email", "hou.17018@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.311792"], ["updated_at", "2018-09-25 23:46:29.311792"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rigsby"], ["store_number", "17726"], ["store_email", "hou.17726@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.314223"], ["updated_at", "2018-09-25 23:46:29.314223"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Babcock & Prue"], ["store_number", "19116"], ["store_email", "hou.19116@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.317573"], ["updated_at", "2018-09-25 23:46:29.317573"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "O'Conner"], ["store_number", "22796"], ["store_email", "hou.22796@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.320610"], ["updated_at", "2018-09-25 23:46:29.320610"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Floresville"], ["store_number", "23005"], ["store_email", "hou.23005@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.323697"], ["updated_at", "2018-09-25 23:46:29.323697"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Converse"], ["store_number", "24388"], ["store_email", "hou.24388@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.326914"], ["updated_at", "2018-09-25 23:46:29.326914"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stonecroft"], ["store_number", "26150"], ["store_email", "hou.26150@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.329969"], ["updated_at", "2018-09-25 23:46:29.329969"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM Boerne"], ["store_number", "28465"], ["store_email", "hou.28465@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.332629"], ["updated_at", "2018-09-25 23:46:29.332629"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM DeZavala"], ["store_number", "28626"], ["store_email", "hou.28626@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.337490"], ["updated_at", "2018-09-25 23:46:29.337490"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM Rigsby"], ["store_number", "28632"], ["store_email", "hou.28632@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.340401"], ["updated_at", "2018-09-25 23:46:29.340401"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ralph Fair"], ["store_number", "28656"], ["store_email", "hou.28656@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.342888"], ["updated_at", "2018-09-25 23:46:29.342888"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM Converse"], ["store_number", "29841"], ["store_email", "hou.29841@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.345335"], ["updated_at", "2018-09-25 23:46:29.345335"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM Vance Jackson"], ["store_number", "29844"], ["store_email", "hou.29844@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.348232"], ["updated_at", "2018-09-25 23:46:29.348232"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM SW Military"], ["store_number", "30378"], ["store_email", "hou.30378@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.351676"], ["updated_at", "2018-09-25 23:46:29.351676"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM Schertz"], ["store_number", "31089"], ["store_email", "hou.31089@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.354130"], ["updated_at", "2018-09-25 23:46:29.354130"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Somerset"], ["store_number", "32872"], ["store_email", "hou.32872@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.356898"], ["updated_at", "2018-09-25 23:46:29.356898"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "The Rim"], ["store_number", "34798"], ["store_email", "hou.34798@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.360021"], ["updated_at", "2018-09-25 23:46:29.360021"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Comfort"], ["store_number", "35416"], ["store_email", "hou.35416@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:29.362930"], ["updated_at", "2018-09-25 23:46:29.362930"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "comment_updates"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "comment_updates" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "comment_id" integer, "update_date" datetime, "update_time" time, "update_type" varchar, "current_update" varchar, "employee_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments"[0m
+  ↳ db/schema.rb:26
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "visit_date" datetime, "visit_time" time, "comment_type" varchar, "source" varchar, "urgent" varchar, "case_number" varchar, "first_issue" varchar, "first_issue_comment" varchar, "second_issue" varchar, "second_issue_comment" varchar, "third_issue" varchar, "third_issue_comment" varchar, "contact_type" varchar, "visit_type" varchar, "employee_named" varchar, "status" varchar, "guest_id" integer, "store_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "guests"[0m
+  ↳ db/schema.rb:49
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "guests" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "street_address" varchar, "city" varchar, "state" varchar, "zip_code" varchar, "phone" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "stores"[0m
+  ↳ db/schema.rb:62
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "stores" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "store_number" varchar, "store_email" varchar, "street_address" varchar, "city" varchar, "state" varchar, "zip_code" varchar, "phone" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:62
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:75
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "username" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:75
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180924142228)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20180924134642),
+(20180924133956),
+(20180924135511),
+(20180923210036);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-09-25 23:46:40.941208"], ["updated_at", "2018-09-25 23:46:40.941208"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "comment_updates"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "comment_updates" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "comment_id" integer, "update_date" datetime, "update_time" time, "update_type" varchar, "current_update" varchar, "employee_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments"[0m
+  ↳ db/schema.rb:26
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "visit_date" datetime, "visit_time" time, "comment_type" varchar, "source" varchar, "urgent" varchar, "case_number" varchar, "first_issue" varchar, "first_issue_comment" varchar, "second_issue" varchar, "second_issue_comment" varchar, "third_issue" varchar, "third_issue_comment" varchar, "contact_type" varchar, "visit_type" varchar, "employee_named" varchar, "status" varchar, "guest_id" integer, "store_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "guests"[0m
+  ↳ db/schema.rb:49
+  [1m[35m (11.3ms)[0m  [1m[35mCREATE TABLE "guests" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "street_address" varchar, "city" varchar, "state" varchar, "zip_code" varchar, "phone" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "stores"[0m
+  ↳ db/schema.rb:62
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "stores" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "store_number" varchar, "store_email" varchar, "street_address" varchar, "city" varchar, "state" varchar, "zip_code" varchar, "phone" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:62
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:75
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "username" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:75
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180924142228)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20180924134642),
+(20180924133956),
+(20180924135511),
+(20180923210036);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-09-25 23:46:41.000918"], ["updated_at", "2018-09-25 23:46:41.000918"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2018-09-25 23:46:41.004926"], ["key", "environment"]]
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "South Laredo"], ["store_number", "1480"], ["store_email", "hou.01480@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.040135"], ["updated_at", "2018-09-25 23:46:41.040135"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "SW Military"], ["store_number", "1703"], ["store_email", "hou.01703@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.043556"], ["updated_at", "2018-09-25 23:46:41.043556"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.6ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "San Pedro"], ["store_number", "1725"], ["store_email", "hou.01725@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.047396"], ["updated_at", "2018-09-25 23:46:41.047396"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "West Commerce"], ["store_number", "2962"], ["store_email", "hou.02962@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.052177"], ["updated_at", "2018-09-25 23:46:41.052177"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.5ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Southcross"], ["store_number", "3348"], ["store_email", "hou.03348@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.056675"], ["updated_at", "2018-09-25 23:46:41.056675"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wurzbach"], ["store_number", "3447"], ["store_email", "hou.03447@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.060631"], ["updated_at", "2018-09-25 23:46:41.060631"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WW White"], ["store_number", "5166"], ["store_email", "hou.05166@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.064068"], ["updated_at", "2018-09-25 23:46:41.064068"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Roosevelt"], ["store_number", "5623"], ["store_email", "hou.05623@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.067554"], ["updated_at", "2018-09-25 23:46:41.067554"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Hill Country"], ["store_number", "6661"], ["store_email", "hou.06661@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.070945"], ["updated_at", "2018-09-25 23:46:41.070945"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "West Houston"], ["store_number", "7091"], ["store_email", "hou.07091@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.074067"], ["updated_at", "2018-09-25 23:46:41.074067"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Med Center"], ["store_number", "7850"], ["store_email", "hou.07850@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.076991"], ["updated_at", "2018-09-25 23:46:41.076991"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Vance Jackson"], ["store_number", "10586"], ["store_email", "hou.10586@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.082527"], ["updated_at", "2018-09-25 23:46:41.082527"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.5ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Guilbeau"], ["store_number", "10675"], ["store_email", "hou.10675@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.086305"], ["updated_at", "2018-09-25 23:46:41.086305"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "DeZavala"], ["store_number", "12673"], ["store_email", "hou.12673@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.090975"], ["updated_at", "2018-09-25 23:46:41.090975"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Zarzamora"], ["store_number", "13364"], ["store_email", "hou.13364@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.094217"], ["updated_at", "2018-09-25 23:46:41.094217"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Broadway"], ["store_number", "14073"], ["store_email", "hou.14073@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.097342"], ["updated_at", "2018-09-25 23:46:41.097342"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM 1604"], ["store_number", "16166"], ["store_email", "hou.16166@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.100626"], ["updated_at", "2018-09-25 23:46:41.100626"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM Jones Maltzburger"], ["store_number", "17018"], ["store_email", "hou.17018@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.103816"], ["updated_at", "2018-09-25 23:46:41.103816"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rigsby"], ["store_number", "17726"], ["store_email", "hou.17726@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.106749"], ["updated_at", "2018-09-25 23:46:41.106749"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Babcock & Prue"], ["store_number", "19116"], ["store_email", "hou.19116@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.109440"], ["updated_at", "2018-09-25 23:46:41.109440"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "O'Conner"], ["store_number", "22796"], ["store_email", "hou.22796@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.112252"], ["updated_at", "2018-09-25 23:46:41.112252"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Floresville"], ["store_number", "23005"], ["store_email", "hou.23005@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.114873"], ["updated_at", "2018-09-25 23:46:41.114873"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Converse"], ["store_number", "24388"], ["store_email", "hou.24388@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.117669"], ["updated_at", "2018-09-25 23:46:41.117669"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stonecroft"], ["store_number", "26150"], ["store_email", "hou.26150@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.120695"], ["updated_at", "2018-09-25 23:46:41.120695"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM Boerne"], ["store_number", "28465"], ["store_email", "hou.28465@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.123983"], ["updated_at", "2018-09-25 23:46:41.123983"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM DeZavala"], ["store_number", "28626"], ["store_email", "hou.28626@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.127393"], ["updated_at", "2018-09-25 23:46:41.127393"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM Rigsby"], ["store_number", "28632"], ["store_email", "hou.28632@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.130411"], ["updated_at", "2018-09-25 23:46:41.130411"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ralph Fair"], ["store_number", "28656"], ["store_email", "hou.28656@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.133702"], ["updated_at", "2018-09-25 23:46:41.133702"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM Converse"], ["store_number", "29841"], ["store_email", "hou.29841@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.136583"], ["updated_at", "2018-09-25 23:46:41.136583"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM Vance Jackson"], ["store_number", "29844"], ["store_email", "hou.29844@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.139611"], ["updated_at", "2018-09-25 23:46:41.139611"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM SW Military"], ["store_number", "30378"], ["store_email", "hou.30378@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.142590"], ["updated_at", "2018-09-25 23:46:41.142590"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM Schertz"], ["store_number", "31089"], ["store_email", "hou.31089@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.145466"], ["updated_at", "2018-09-25 23:46:41.145466"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Somerset"], ["store_number", "32872"], ["store_email", "hou.32872@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.148316"], ["updated_at", "2018-09-25 23:46:41.148316"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "The Rim"], ["store_number", "34798"], ["store_email", "hou.34798@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.150955"], ["updated_at", "2018-09-25 23:46:41.150955"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Comfort"], ["store_number", "35416"], ["store_email", "hou.35416@us.stores.mcd.com"], ["created_at", "2018-09-25 23:46:41.153495"], ["updated_at", "2018-09-25 23:46:41.153495"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+Started GET "/" for 127.0.0.1 at 2018-09-25 18:47:11 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21
+Completed 404 Not Found in 10ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/application_controller.rb:21:in `current_user'
+Started GET "/" for 127.0.0.1 at 2018-09-25 18:47:23 -0500
+Processing by SessionsController#welcome as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/application_controller.rb:21:in `current_user'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateUsers (20180923210036)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "username" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180923210036_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180923210036"]]
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateStores (20180924133956)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "stores" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "store_number" varchar, "store_email" varchar, "street_address" varchar, "city" varchar, "state" varchar, "zip_code" varchar, "phone" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180924133956_create_stores.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180924133956"]]
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateGuests (20180924134642)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "guests" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "street_address" varchar, "city" varchar, "state" varchar, "zip_code" varchar, "phone" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180924134642_create_guests.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180924134642"]]
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateComments (20180924135511)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "visit_date" datetime, "visit_time" time, "comment_type" varchar, "source" varchar, "urgent" varchar, "case_number" varchar, "first_issue" varchar, "first_issue_comment" varchar, "second_issue" varchar, "second_issue_comment" varchar, "third_issue" varchar, "third_issue_comment" varchar, "contact_type" varchar, "visit_type" varchar, "employee_named" varchar, "status" varchar DEFAULT 'Open', "guest_id" integer, "store_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180924135511_create_comments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180924135511"]]
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateCommentUpdates (20180924142228)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "comment_updates" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "comment_id" integer, "update_date" datetime, "update_time" time, "update_type" varchar, "current_update" varchar, "employee_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180924142228_create_comment_updates.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180924142228"]]
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-09-25 23:49:58.429276"], ["updated_at", "2018-09-25 23:49:58.429276"]]
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2018-09-25 18:50:46 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21
+Completed 404 Not Found in 13ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/application_controller.rb:21:in `current_user'
