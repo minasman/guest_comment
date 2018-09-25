@@ -3,5 +3,12 @@
         <p><%= @comment.guest.first_name %> <%= @comment.guest.last_name %></p>
         <p><%= @comment.guest.email %> <%= @comment.guest.phone %></p>
 
-        <p><%= @comment.store_id %> <%= @comment.visit_date %></p>
-        <p><%= @comment.visit_time %> <%= @comment.comment_type %></p>
+        <p><%= @comment.store.name %> <%= @comment.visit_date.strftime("%m/%d/%Y") %></p>
+        <p><%= @comment.visit_time.strftime("%I:%M%p")  %> <%= @comment.comment_type %></p>
+        <% if !@comment.comment_updates.empty? %>
+                <h2>Updates</h2>
+                <% @comment.comment_updates.each do |u| %>
+                        <p>Date: <%= u.update_date.strftime("%m/%d/%Y")%> Employee: <%= u.employee_name %><br>
+                        Update: <%= u.current_update %></p>
+                <% end %>
+        <% end %>

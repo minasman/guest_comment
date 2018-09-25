@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
     #before_action :require_log_in, except: [:new, :create, :home]
     helper_method :current_user
 
-    def welcome
+    def index
     end
 
     def logged_in?

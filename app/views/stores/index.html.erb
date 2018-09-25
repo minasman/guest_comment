@@ -1,3 +1,4 @@
 <% @store.each do |store| %>
-    <p><%= store.name %></p><br>
+    <p><%= store.store_number %> - <%= store.name %><br>
+    Comments: <%= store.comments.count  %></p>
 <% end %>
