@@ -13623,3 +13623,2128 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 72ms (Views: 69.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/logout" for 127.0.0.1 at 2018-09-26 10:54:26 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:27 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:28 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:28 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:28 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:28 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:28 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:28 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:28 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:28 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:28 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:28 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:28 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:28 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:28 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:28 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:28 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:28 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:28 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:28 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:28 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:28 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:33 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:33 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:33 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:33 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:33 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:33 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:33 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:33 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:33 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:33 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:33 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:33 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:33 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:33 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:34 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:34 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:34 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:34 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:34 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:54:34 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:06 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:06 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:06 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:06 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:06 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:06 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:06 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:06 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:06 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:06 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:06 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:06 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:06 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:06 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:06 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:06 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:06 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:06 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:06 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:06 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:21 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:55:22 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:56:43 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:56:43 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:56:43 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:56:43 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:56:43 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:56:43 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:56:43 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:56:43 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:56:43 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:56:43 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:56:43 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:56:43 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:56:43 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:56:43 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:56:43 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:56:43 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:56:43 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:56:43 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:56:43 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:56:43 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:57:01 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:57:01 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:57:01 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:57:01 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:57:01 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:57:01 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:57:01 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:57:01 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:57:01 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:57:01 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:57:01 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:57:01 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:57:01 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:57:01 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:57:01 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:57:01 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:57:01 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:57:01 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:57:01 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 10:57:01 -0500
+Processing by SessionsController#welcome as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 11:02:34 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 343ms (Views: 340.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2018-09-26 11:02:40 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 11:02:40 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 90ms (Views: 86.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2018-09-26 11:02:42 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 11:02:42 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 80ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:02:46 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 102ms (Views: 63.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2018-09-26 11:02:49 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IcRHNc4+2AX3AfH7kg6qaENzU607L+9noSVObFH3NzIDEu0CZHRh9OmQDQISMqp6jlAc1uBlTYdBOR7vzkDZKw==", "user"=>{"username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-26 11:02:49 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 70ms (Views: 67.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2018-09-26 11:03:21 -0500
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 11:03:21 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 60ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:03:23 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 77ms (Views: 73.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2018-09-26 11:06:56 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SCcxWnG5b3JvRep/ymQlY4ZpaEZxcVgI1eo3ekrVsRFq8Ztt2/PWg3HUFoZKWCVxS0onPao7+ug19mf51WJfCA==", "user"=>{"username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-26 11:06:56 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 68ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-26 11:12:36 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 311ms (Views: 293.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2018-09-26 11:12:39 -0500
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 11:12:39 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 81ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:14:41 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 99ms (Views: 95.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2018-09-26 11:14:45 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2qYDagXdaaDUcHCch6sPUq0+RyzMCkJ6e6L5znyGUfn4cKldr5fQUcrhjGUHlw9AYB0IVxdA4JqbvqlN4zG/4A==", "user"=>{"username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-26 11:14:45 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 70ms (Views: 66.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:15:52 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 78ms (Views: 74.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2018-09-26 11:15:55 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RVp5VB9oukOWm6+jtvKDuwBA5pbsk6icJmmI9LhGeIVnjNNjtSIDsogKU1o2zoOpzWOp7TfZCnzGddh3J/GWnA==", "user"=>{"username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-26 11:15:55 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 76ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2018-09-26 11:16:56 -0500
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 11:16:56 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 58ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 11:16:57 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 67ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:16:58 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 77ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2018-09-26 11:17:02 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JdQXdAPIgeVvFNbwiAyD3ffkxbSDSg46Nq6KsdHCTfUHAr1DqYI4FHGFKgkIMIPPOseKz1gArNrWstoyTnWj7A==", "user"=>{"username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-26 11:17:02 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 71ms (Views: 68.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:18:58 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 70ms (Views: 66.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2018-09-26 11:19:01 -0500
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 11:19:01 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 48ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 11:19:02 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 65ms (Views: 62.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:19:03 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 74ms (Views: 71.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2018-09-26 11:19:06 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Va9hEYbu4HLsLjRvfl7LsYSkj9EwqRSKe4z85MgR4XN3ecsmLKRZg/K/yJb+YsujSYfAquvjtmqbkKxnV6YPag==", "user"=>{"username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-26 11:19:06 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 69ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2018-09-26 11:19:54 -0500
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 11:19:54 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 55ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 11:19:54 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 56ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:19:56 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 77ms (Views: 74.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2018-09-26 11:19:59 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gLwfIhxKtgOJ6Pt2ytyZZMmqsHmGzfXQHRuVQkcCENqiarUVtgAP8pd5B49K4Jl2BIn/Al2HVzD9B8XB2LX+ww==", "user"=>{"username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-26 11:19:59 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 68ms (Views: 65.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 11:22:12 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 304ms (Views: 295.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:22:15 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 128ms (Views: 102.0ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2018-09-26 11:22:18 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JWP7bOzyNJrd+uooq7yyuEjpJSSXoye3w06XuFfZWZ0HtVFbRriNa8NrFtErgLKqhcpqX0zphVcjUsc7yG63hA==", "user"=>{"username"=>"minasman", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "minasman"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-26 11:22:18 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 92ms (Views: 88.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:25:25 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 70ms (Views: 66.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2018-09-26 11:25:28 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/6IBi4vXLOS9Q43nAHiBO+0C+mrIMaFFfqoHvnejt4zddKu8IZ2VFaPScR6ARIEpICG1ERN7A6Wetlc96BRZlQ==", "user"=>{"username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-26 11:25:28 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 73ms (Views: 70.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:26:19 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 78ms (Views: 74.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2018-09-26 11:26:22 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XPs6bipAM2BJ0efJCHuZk2vWDWyT4sLXSBaRt2UWyNF+LZBZgAqKkVdAGzCIR5mBpvVCF0ioYDeoCsE0+qEmyA==", "user"=>{"username"=>"minasman", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "minasman"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-26 11:26:22 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 79ms (Views: 75.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:26:27 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 81ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2018-09-26 11:28:03 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mvNT6QIwbvcDp5n6sCEd4B2xwY9X+yi+E01Q7SCBJaS4JfneqHrXBh02ZQMwHR3y0JKO9Iyxil7zUQBuvzbLvQ==", "user"=>{"username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-26 11:28:03 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 69ms (Views: 65.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:29:37 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 67ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2018-09-26 11:29:40 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oDX8/EL7EpMHUqm88lfjpMXFVzpRIvJNlLx4SqIOlsiC41bL6LGrYhnDVUVya+O2COYYQYpoUK10oCjJPbl40Q==", "user"=>{"username"=>"lkhlk", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "lkhlk"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-26 11:29:40 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 68ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:34:49 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 71ms (Views: 53.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2018-09-26 11:34:52 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o5WiVPRHr5xj58zSNoPJi9TN+JHhLCDdQFflmiRGFniBQwhjXg0WbX12MCu2v8mZGe636jpmgj2gS7UZu/H4YQ==", "user"=>{"username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/signin
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:34:52 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (8669.8ms)
+Completed 200 OK in 8749ms (Views: 8745.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:36:43 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 73ms (Views: 56.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2018-09-26 11:36:46 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EUY2Pf4RSVQRlaJYKS2cRBPO85jGb9jYZXgfVZzkJzozkJwKVFvwpQ8EXqGpEZxW3u284x0lejiFZE/WA1PJIw==", "user"=>{"username"=>"Daniel", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Daniel"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/signin
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:36:46 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 73ms (Views: 70.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:37:13 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 95ms (Views: 91.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2018-09-26 11:37:14 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f31CM7SbOLhkz+F2Zt8BnDD5fjcLPhJyZJzWf79LheBdq+gEHtGBSXpeHY/m4wGO/doxTNB0sJKEgIb8IPxr+Q==", "user"=>{"username"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/signin
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:37:14 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 81ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:37:48 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/danielhernandez/Dropbox/Flatiron/guest_comment/app/views/sessions/new.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+... class: "form-control" required: true );@output_buffer.safe_...
+...                               ^):
+  
+app/views/sessions/new.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:38:09 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/danielhernandez/Dropbox/Flatiron/guest_comment/app/views/sessions/new.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+... class: "form-control" required: "true" );@output_buffer.saf...
+...                               ^):
+  
+app/views/sessions/new.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:38:20 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/danielhernandez/Dropbox/Flatiron/guest_comment/app/views/sessions/new.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+... class: "form-control" required: "true" );@output_buffer.saf...
+...                               ^):
+  
+app/views/sessions/new.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:38:30 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 56ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2018-09-26 11:38:39 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aHX3wKTpMWPc7rcHEC3EUk2MQlyN4mdBkBR7RQ+YN5qotGZZ6ruixamkhz9eE8wASd6pln1er5aD8w3QmAtOSQ==", "user"=>{"username"=>"dfas", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "dfas"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/signin
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-26 11:38:39 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 80ms (Views: 76.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-09-26 11:38:54 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 81ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-09-26 11:40:55 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1czjuZ+FbhzS6Ne4RVpTXFVg+ftERhNh8AZFf2w/hs19K8GFMcfRDhWAg44nUVLhtqPcxyL0BaqlI3fdDlekbQ==", "user"=>{"first_name"=>"Daniel", "last_name"=>"Hernandez", "position"=>"Director", "email"=>"elreymcd@yahoo.com", "username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Register"}
+Unpermitted parameter: :position
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "elreymcd@yahoo.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "elreymcd@yahoo.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 145ms (Views: 68.7ms | ActiveRecord: 0.7ms)
+
+
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/users" for 127.0.0.1 at 2018-09-26 11:41:59 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hGODX29y3O2VQwbg6GQV+UQTj6T4MAeeFb902Kd9x6xEohLGISBPS+AJNtimWh2rQEFkbgiMz0kGWAJNMO6+fw==", "user"=>{"first_name"=>"Daniel", "last_name"=>"Hernandez", "position"=>"Director", "email"=>"elreymcd@yahoo.com", "username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Register"}
+Unpermitted parameter: :position
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "elreymcd@yahoo.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "elreymcd@yahoo.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 135ms (Views: 64.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-09-26 11:42:36 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wjTVo3vCQm3eyF7gBqSXF5s+6iWZvEn4V1lHQ7VuT+YC9UQ6NZDRy6uCbthImp9Fn2wB72kAgS9EvjHWIv02NQ==", "user"=>{"first_name"=>"Daniel", "last_name"=>"Hernandez", "position"=>"Director", "email"=>"elreymcd@yahoo.com", "username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Register"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "elreymcd@yahoo.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "position", "username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Daniel"], ["last_name", "Hernandez"], ["position", "Director"], ["username", "elrey"], ["email", "elreymcd@yahoo.com"], ["password_digest", "$2a$10$FvSGkn8taNuJwrLufm4bmOg7bPCC6Hk95tMmX.LM7h4DKUkACw8A."], ["created_at", "2018-09-26 16:42:36.166078"], ["updated_at", "2018-09-26 16:42:36.166078"]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "elrey"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "elreymcd@yahoo.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 97ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-26 11:42:36 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 72ms (Views: 65.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2018-09-26 11:42:41 -0500
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 11:42:41 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 61ms (Views: 58.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-09-26 11:42:43 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 77ms (Views: 73.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-09-26 11:42:57 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R5HL4LmvTF+U9yJ/lEjZSOALavxVbuJ/ynXz3R4ExEnvduncF+3zTVOfdkn2Q9j1A8hPwDPc9LSfUMF/fGzm6Q==", "user"=>{"first_name"=>"Daniel", "last_name"=>"Hernandez", "position"=>"Director", "email"=>"elreymcd@yahoo.com", "username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Register"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "elreymcd@yahoo.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "elreymcd@yahoo.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 143ms (Views: 73.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-09-26 11:44:48 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DT3wrlLQN6T+aXB1BKJw54ukLCgmcLxNsQz/G0W+kxjN/GE3HIKkAosjQE1KnHi1j/bH4tbMdJqi64mO0i3qyw==", "user"=>{"first_name"=>"Daniel", "last_name"=>"Hernandez", "position"=>"Director", "email"=>"elreymcd@yahoo.com", "username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Register"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "elreymcd@yahoo.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "elreymcd@yahoo.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 557440ms (Views: 75.3ms | ActiveRecord: 1.4ms)
+
+

@@ -10,7 +10,8 @@ class SessionsController < ApplicationController
             session[:user_id] = @user.id
             redirect_to user_path(@user)
         else
-            redirect_to new_user_path
+            flash.notice = "Username and/or Password Not Found"
+            redirect_to signin_path
         end
     end
 
