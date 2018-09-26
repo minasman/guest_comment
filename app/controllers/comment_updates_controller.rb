@@ -6,6 +6,7 @@ class CommentUpdatesController < ApplicationController
     end
 
     def create
+        binding.pry
         @update = CommentUpdate.create(update_params)
         @update.save
         if params[:comment][:status] == "Closed"
