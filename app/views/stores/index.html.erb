@@ -1,4 +1,9 @@
+<h2>Restaurants</h2>
 <% @store.each do |store| %>
-    <p><%= store.store_number %> - <%= store.name %><br>
-    Comments: <%= store.comments.count  %></p>
+    <div class="card" style="width: auto;">
+        <div class="card-body">
+            <p class="card-title"><%= store.store_number %> - <%= store.name %><br>
+            Comments: <%= store.comments.count  %></p>
+        </div>
+    </div>
 <% end %>

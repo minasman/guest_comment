@@ -1,7 +1,6 @@
-<h1>Hi, <%= @user.first_name %>!</h1>
-<h2>Your username is <%= @user.username %></h2>
+<h1>Hi, <%= @user.first_name %></h1>
 <button type="button" class="btn btn-light" ><%=link_to 'Add Comment', new_comment_path %></button>
-<button type="button" class="btn btn-light" ><%=link_to 'See All Comments', comments_path %></button>
+<button type="button" class="btn btn-light" ><%=link_to 'See Open Comments', comments_path %></button>
 <button type="button" class="btn btn-light" ><%=link_to 'Update A Comment', new_comment_update_path %></button>
 <button type="button" class="btn btn-light" ><%=link_to 'List Stores', stores_path %></button>
 

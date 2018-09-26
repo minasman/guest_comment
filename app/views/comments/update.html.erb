@@ -6,7 +6,7 @@
     <%= f.label :update_date, "Date Updated" %>
         <%= f.date_field :update_date %>
     <%= f.label :update_type, "Contact Type" %>
-        <%= f.text_field :update_type %>
+        <%= f.select :update_type, Comment::CONTACT_TYPE %>
     <%= f.label :employee_name, "Who Contacted" %>
         <%= f.text_field :employee_name %><br>
     <%= f.label :current_update, "Update" %><br>

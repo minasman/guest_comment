@@ -10293,3 +10293,2218 @@ Completed 404 Not Found in 13ms (ActiveRecord: 0.7ms)
 ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
   
 app/controllers/application_controller.rb:21:in `current_user'
+Started GET "/" for 127.0.0.1 at 2018-09-25 18:55:13 -0500
+Processing by SessionsController#welcome as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21
+Completed 404 Not Found in 5ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/application_controller.rb:21:in `current_user'
+Started GET "/" for 127.0.0.1 at 2018-09-25 18:57:09 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 374ms (Views: 371.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-25 18:57:13 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 99ms (Views: 82.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2018-09-25 18:57:15 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-25 18:57:15 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 65ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stores" for 127.0.0.1 at 2018-09-25 18:57:22 -0500
+Processing by StoresController#index as HTML
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `require_log_in' for #<StoresController:0x007f82fda1f568>
+Did you mean?  require_or_load):
+  
+activesupport (5.2.1) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.1) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.1) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/stores" for 127.0.0.1 at 2018-09-25 18:58:32 -0500
+Processing by StoresController#index as HTML
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `logged_in?' for #<StoresController:0x007f8302095880>
+Did you mean?  logger):
+  
+app/controllers/application_controller.rb:6:in `require_log_in'
+Started GET "/stores" for 127.0.0.1 at 2018-09-25 18:59:11 -0500
+Processing by StoresController#index as HTML
+Completed 500 Internal Server Error in 204ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<StoresController:0x007f8305987cb0>):
+  
+app/controllers/application_controller.rb:5:in `logged_in?'
+app/controllers/application_controller.rb:10:in `require_log_in'
+Started GET "/stores" for 127.0.0.1 at 2018-09-25 18:59:32 -0500
+Processing by StoresController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-25 18:59:32 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2018-09-25 18:59:35 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-25 18:59:35 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-09-25 18:59:36 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 78ms (Views: 57.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-25 18:59:37 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 66ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-09-25 18:59:38 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 78ms (Views: 74.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2018-09-25 18:59:39 -0500
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-25 18:59:39 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 84ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-25 18:59:43 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 79ms (Views: 76.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-25 19:00:13 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 358ms (Views: 349.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-25 19:00:16 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 113ms (Views: 93.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-09-25 19:00:17 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 93ms (Views: 89.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-25 19:00:20 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 70ms (Views: 65.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2018-09-25 19:00:23 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XqA76AYdXbBeLQu14WjtweFoTH9doAT8NqqjqIKk9xZBaxhsUwuXnDRSi+sOMggiD9EokBp3SJS5+NqJmJZoYg==", "user"=>{"username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Completed 500 Internal Server Error in 188ms (ActiveRecord: 0.3ms)
+
+
+  
+NameError (undefined local variable or method `new_session_path' for #<SessionsController:0x007fda9f0724f8>
+Did you mean?  new_user_path):
+  
+app/controllers/sessions_controller.rb:13:in `create'
+Started POST "/signin" for 127.0.0.1 at 2018-09-25 19:01:10 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XqA76AYdXbBeLQu14WjtweFoTH9doAT8NqqjqIKk9xZBaxhsUwuXnDRSi+sOMggiD9EokBp3SJS5+NqJmJZoYg==", "user"=>{"username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 13ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-25 19:01:20 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 80ms (Views: 67.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-25 19:01:23 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 85ms (Views: 81.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2018-09-25 19:01:27 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WPLW0LHjfJUBfFrG6Bd0N676nsJMEKy0dNbWiH0Ra1tHOfVU5PW2uWsD2pgHTZHUQEP6LQvH4Nz7hK+pZyP0Lw==", "user"=>{"username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-25 19:01:27 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 97ms (Views: 93.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2018-09-25 19:01:30 -0500
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_log_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-25 19:01:30 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 57ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-09-25 19:01:31 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 74ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-25 19:01:32 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 64ms (Views: 60.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2018-09-25 19:01:33 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-25 19:01:33 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 46ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-09-25 19:01:34 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 77ms (Views: 73.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2018-09-25 19:01:38 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sChNLVBejRoacZansqeo6C5mmE83IPRXWippg9KoTcev426pBUhHNnAOFvld/U0LwN/8oHD3uD/VeBCiyJrSsw==", "user"=>{"username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "elrey"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-25 19:01:38 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 67ms (Views: 63.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-09-25 19:01:49 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5lWqFol5foPtnydmeiQ8z9jmsC/6mlz06AWEEaRn5wIU4wztYOnG8gMb6DwMsiL2tEYUkSoWv8l8u1LLpjT+FA==", "user"=>{"first_name"=>"Daniel", "last_name"=>"Hernandez", "email"=>"elreymcd@yahoo.com", "username"=>"elrey", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Daniel"], ["last_name", "Hernandez"], ["username", "elrey"], ["email", "elreymcd@yahoo.com"], ["password_digest", "$2a$10$v78x99OqQ9P/gEsSIU9VlO9J7j2p4vObs3L3Bf7eX3GvrDQgVfa/C"], ["created_at", "2018-09-26 00:01:49.840839"], ["updated_at", "2018-09-26 00:01:49.840839"]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 71ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 19:01:49 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 62ms (Views: 56.0ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/danielhernandez/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "South Laredo"], ["store_number", "1480"], ["store_email", "hou.01480@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:07.236026"], ["updated_at", "2018-09-26 00:02:07.236026"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "SW Military"], ["store_number", "1703"], ["store_email", "hou.01703@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:07.247720"], ["updated_at", "2018-09-26 00:02:07.247720"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.7ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "San Pedro"], ["store_number", "1725"], ["store_email", "hou.01725@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:07.252166"], ["updated_at", "2018-09-26 00:02:07.252166"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.5ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "West Commerce"], ["store_number", "2962"], ["store_email", "hou.02962@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:07.256971"], ["updated_at", "2018-09-26 00:02:07.256971"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Southcross"], ["store_number", "3348"], ["store_email", "hou.03348@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:07.260682"], ["updated_at", "2018-09-26 00:02:07.260682"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.5ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Wurzbach"], ["store_number", "3447"], ["store_email", "hou.03447@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:07.264304"], ["updated_at", "2018-09-26 00:02:07.264304"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WW White"], ["store_number", "5166"], ["store_email", "hou.05166@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:07.268326"], ["updated_at", "2018-09-26 00:02:07.268326"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Roosevelt"], ["store_number", "5623"], ["store_email", "hou.05623@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:07.271729"], ["updated_at", "2018-09-26 00:02:07.271729"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Hill Country"], ["store_number", "6661"], ["store_email", "hou.06661@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:07.274815"], ["updated_at", "2018-09-26 00:02:07.274815"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "West Houston"], ["store_number", "7091"], ["store_email", "hou.07091@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:07.277841"], ["updated_at", "2018-09-26 00:02:07.277841"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Med Center"], ["store_number", "7850"], ["store_email", "hou.07850@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:07.280935"], ["updated_at", "2018-09-26 00:02:07.280935"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Vance Jackson"], ["store_number", "10586"], ["store_email", "hou.10586@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:07.284024"], ["updated_at", "2018-09-26 00:02:07.284024"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Guilbeau"], ["store_number", "10675"], ["store_email", "hou.10675@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:07.287035"], ["updated_at", "2018-09-26 00:02:07.287035"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "DeZavala"], ["store_number", "12673"], ["store_email", "hou.12673@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:07.289970"], ["updated_at", "2018-09-26 00:02:07.289970"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Zarzamora"], ["store_number", "13364"], ["store_email", "hou.13364@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:07.293029"], ["updated_at", "2018-09-26 00:02:07.293029"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1218.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Broadway"], ["store_number", "14073"], ["store_email", "hou.14073@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:08.514404"], ["updated_at", "2018-09-26 00:02:08.514404"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM 1604"], ["store_number", "16166"], ["store_email", "hou.16166@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:08.524062"], ["updated_at", "2018-09-26 00:02:08.524062"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM Jones Maltzburger"], ["store_number", "17018"], ["store_email", "hou.17018@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:08.527714"], ["updated_at", "2018-09-26 00:02:08.527714"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rigsby"], ["store_number", "17726"], ["store_email", "hou.17726@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:08.531430"], ["updated_at", "2018-09-26 00:02:08.531430"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Babcock & Prue"], ["store_number", "19116"], ["store_email", "hou.19116@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:08.536952"], ["updated_at", "2018-09-26 00:02:08.536952"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "O'Conner"], ["store_number", "22796"], ["store_email", "hou.22796@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:08.541167"], ["updated_at", "2018-09-26 00:02:08.541167"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Floresville"], ["store_number", "23005"], ["store_email", "hou.23005@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:08.545088"], ["updated_at", "2018-09-26 00:02:08.545088"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Converse"], ["store_number", "24388"], ["store_email", "hou.24388@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:08.548473"], ["updated_at", "2018-09-26 00:02:08.548473"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stonecroft"], ["store_number", "26150"], ["store_email", "hou.26150@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:08.551851"], ["updated_at", "2018-09-26 00:02:08.551851"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.8ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM Boerne"], ["store_number", "28465"], ["store_email", "hou.28465@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:08.558201"], ["updated_at", "2018-09-26 00:02:08.558201"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM DeZavala"], ["store_number", "28626"], ["store_email", "hou.28626@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:08.563129"], ["updated_at", "2018-09-26 00:02:08.563129"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM Rigsby"], ["store_number", "28632"], ["store_email", "hou.28632@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:08.567280"], ["updated_at", "2018-09-26 00:02:08.567280"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ralph Fair"], ["store_number", "28656"], ["store_email", "hou.28656@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:08.571325"], ["updated_at", "2018-09-26 00:02:08.571325"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM Converse"], ["store_number", "29841"], ["store_email", "hou.29841@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:08.575719"], ["updated_at", "2018-09-26 00:02:08.575719"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM Vance Jackson"], ["store_number", "29844"], ["store_email", "hou.29844@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:08.580156"], ["updated_at", "2018-09-26 00:02:08.580156"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM SW Military"], ["store_number", "30378"], ["store_email", "hou.30378@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:08.584501"], ["updated_at", "2018-09-26 00:02:08.584501"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "WM Schertz"], ["store_number", "31089"], ["store_email", "hou.31089@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:08.588892"], ["updated_at", "2018-09-26 00:02:08.588892"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Somerset"], ["store_number", "32872"], ["store_email", "hou.32872@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:08.594517"], ["updated_at", "2018-09-26 00:02:08.594517"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "The Rim"], ["store_number", "34798"], ["store_email", "hou.34798@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:08.599221"], ["updated_at", "2018-09-26 00:02:08.599221"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStore Create (0.5ms)[0m  [1m[32mINSERT INTO "stores" ("name", "store_number", "store_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Comfort"], ["store_number", "35416"], ["store_email", "hou.35416@us.stores.mcd.com"], ["created_at", "2018-09-26 00:02:08.603080"], ["updated_at", "2018-09-26 00:02:08.603080"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+Started GET "/stores" for 127.0.0.1 at 2018-09-25 19:02:16 -0500
+Processing by StoresController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:1
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 1]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 2]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 3]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 4]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 5]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 6]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 7]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 8]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 9]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 10]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 11]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 12]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 13]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 14]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 15]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 16]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 17]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 18]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 19]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 20]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 21]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 22]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 23]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 24]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 25]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 26]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 27]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 28]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 29]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 30]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 31]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 32]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 33]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 34]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 35]]
+  ↳ app/views/stores/index.html.erb:3
+  Rendered stores/index.html.erb within layouts/application (69.1ms)
+Completed 200 OK in 137ms (Views: 116.8ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 19:02:22 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 81ms (Views: 74.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2018-09-25 19:03:01 -0500
+Processing by CommentsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/new.html.erb within layouts/application
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/comments/new.html.erb:14
+  Rendered comments/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 106ms (Views: 66.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 19:03:27 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 109ms (Views: 102.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2018-09-25 19:05:14 -0500
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/comments/index.html.erb:1
+  Rendered comments/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 86ms (Views: 80.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 19:05:56 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 85ms (Views: 77.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2018-09-25 19:10:22 -0500
+Processing by CommentsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/new.html.erb within layouts/application
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/comments/new.html.erb:14
+  Rendered comments/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 174ms (Views: 99.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2018-09-25 19:11:04 -0500
+Processing by CommentsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/new.html.erb within layouts/application
+  [1m[36mStore Load (0.5ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/comments/new.html.erb:14
+  Rendered comments/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 88ms (Views: 83.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2018-09-25 19:12:35 -0500
+Processing by CommentsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/new.html.erb within layouts/application
+  [1m[36mStore Load (0.4ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/comments/new.html.erb:14
+  Rendered comments/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 75ms (Views: 71.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2018-09-25 19:15:34 -0500
+Processing by CommentsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/new.html.erb within layouts/application
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/comments/new.html.erb:14
+  Rendered comments/new.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 120ms (Views: 67.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2018-09-25 19:16:05 -0500
+Processing by CommentsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/new.html.erb within layouts/application
+  [1m[36mStore Load (0.4ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/comments/new.html.erb:14
+  Rendered comments/new.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 135ms (Views: 81.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2018-09-25 19:21:39 -0500
+Processing by CommentsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/Users/danielhernandez/Dropbox/Flatiron/guest_comment/app/models/comment.rb:11: syntax error, unexpected tSTRING_BEG, expecting '('
+    ORDER_POINT = ["DT", "FC". "Mobile", "Kiosk", "Delivery", "Other"]
+                                ^
+/Users/danielhernandez/Dropbox/Flatiron/guest_comment/app/models/comment.rb:11: syntax error, unexpected ',', expecting keyword_end
+    ORDER_POINT = ["DT", "FC". "Mobile", "Kiosk", "Delivery", "Other"]
+                                        ^
+/Users/danielhernandez/Dropbox/Flatiron/guest_comment/app/models/comment.rb:11: syntax error, unexpected ',', expecting keyword_end
+    ORDER_POINT = ["DT", "FC". "Mobile", "Kiosk", "Delivery", "Other"]
+                                                 ^
+/Users/danielhernandez/Dropbox/Flatiron/guest_comment/app/models/comment.rb:11: syntax error, unexpected ',', expecting keyword_end
+    ORDER_POINT = ["DT", "FC". "Mobile", "Kiosk", "Delivery", "Other"]
+                                                             ^
+/Users/danielhernandez/Dropbox/Flatiron/guest_comment/app/models/comment.rb:11: syntax error, unexpected ']', expecting keyword_end):
+  
+app/models/comment.rb:11: syntax error, unexpected tSTRING_BEG, expecting '('
+app/models/comment.rb:11: syntax error, unexpected ',', expecting keyword_end
+app/models/comment.rb:11: syntax error, unexpected ',', expecting keyword_end
+app/models/comment.rb:11: syntax error, unexpected ',', expecting keyword_end
+app/models/comment.rb:11: syntax error, unexpected ']', expecting keyword_end
+app/controllers/comments_controller.rb:8:in `new'
+Started GET "/comments/new" for 127.0.0.1 at 2018-09-25 19:22:10 -0500
+Processing by CommentsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/danielhernandez/Dropbox/Flatiron/guest_comment/app/models/comment.rb:11: syntax error, unexpected tSTRING_BEG, expecting '('
+    ORDER_POINT = ["DT", "FC". "Mobile", "Kiosk", "Delivery", "Other"]
+                                ^
+/Users/danielhernandez/Dropbox/Flatiron/guest_comment/app/models/comment.rb:11: syntax error, unexpected ',', expecting keyword_end
+    ORDER_POINT = ["DT", "FC". "Mobile", "Kiosk", "Delivery", "Other"]
+                                        ^
+/Users/danielhernandez/Dropbox/Flatiron/guest_comment/app/models/comment.rb:11: syntax error, unexpected ',', expecting keyword_end
+    ORDER_POINT = ["DT", "FC". "Mobile", "Kiosk", "Delivery", "Other"]
+                                                 ^
+/Users/danielhernandez/Dropbox/Flatiron/guest_comment/app/models/comment.rb:11: syntax error, unexpected ',', expecting keyword_end
+    ORDER_POINT = ["DT", "FC". "Mobile", "Kiosk", "Delivery", "Other"]
+                                                             ^
+/Users/danielhernandez/Dropbox/Flatiron/guest_comment/app/models/comment.rb:11: syntax error, unexpected ']', expecting keyword_end):
+  
+app/models/comment.rb:11: syntax error, unexpected tSTRING_BEG, expecting '('
+app/models/comment.rb:11: syntax error, unexpected ',', expecting keyword_end
+app/models/comment.rb:11: syntax error, unexpected ',', expecting keyword_end
+app/models/comment.rb:11: syntax error, unexpected ',', expecting keyword_end
+app/models/comment.rb:11: syntax error, unexpected ']', expecting keyword_end
+app/controllers/comments_controller.rb:8:in `new'
+Started GET "/comments/new" for 127.0.0.1 at 2018-09-25 19:22:33 -0500
+Processing by CommentsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/new.html.erb within layouts/application
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/comments/new.html.erb:14
+  Rendered comments/new.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 131ms (Views: 83.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2018-09-25 19:23:04 -0500
+Processing by CommentsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/new.html.erb within layouts/application
+  [1m[36mStore Load (0.4ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/comments/new.html.erb:14
+  Rendered comments/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 74ms (Views: 69.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2018-09-25 19:23:22 -0500
+Processing by CommentsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/new.html.erb within layouts/application
+  [1m[36mStore Load (0.4ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/comments/new.html.erb:14
+  Rendered comments/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 73ms (Views: 68.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2018-09-25 19:25:07 -0500
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+EH+wrVU0MwkIKNo25FlEU4q2/cLZ9HspigvJ8KCrsIK91g5XMRovcqkbDKtB3soIop/SdvrMtEylvn9wNG31A==", "guest"=>{"first_name"=>"Daniel", "last_name"=>"Hernandez", "email"=>"elreymcd@yahoo.com", "phone"=>"2107718720"}, "comment"=>{"store_id"=>"2", "visit_date"=>"2018-09-12", "visit_time"=>"16:04", "comment_type"=>"Complaint", "source"=>"800#", "urgent"=>"General", "case_number"=>"12345", "first_issue"=>"Speed", "first_issue_comment"=>"SLOW", "second_issue"=>"Clean", "second_issue_comment"=>"DIRTY", "third_issue"=>"Nice", "third_issue_comment"=>"MEAN", "contact_type"=>"Phone", "visit_type"=>"DT", "employee_named"=>"Daniel", "status"=>"Open"}, "commit"=>"Create Comment"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."email" = ? LIMIT ?[0m  [["email", "elreymcd@yahoo.com"], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:13
+  [1m[36mGuest Create (0.5ms)[0m  [1m[32mINSERT INTO "guests" ("email", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["email", "elreymcd@yahoo.com"], ["created_at", "2018-09-26 00:25:07.648089"], ["updated_at", "2018-09-26 00:25:07.648089"]]
+  ↳ app/controllers/comments_controller.rb:13
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:14
+  [1m[36mGuest Update (0.8ms)[0m  [1m[33mUPDATE "guests" SET "first_name" = ?, "last_name" = ?, "phone" = ?, "updated_at" = ? WHERE "guests"."id" = ?[0m  [["first_name", "Daniel"], ["last_name", "Hernandez"], ["phone", "2107718720"], ["updated_at", "2018-09-26 00:25:07.653696"], ["id", 1]]
+  ↳ app/controllers/comments_controller.rb:14
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:15
+  [1m[36mStore Load (0.5ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/comments_controller.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:17
+  [1m[36mGuest Load (0.3ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:17
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("visit_date", "visit_time", "comment_type", "source", "urgent", "case_number", "first_issue", "first_issue_comment", "second_issue", "second_issue_comment", "third_issue", "third_issue_comment", "contact_type", "visit_type", "employee_named", "guest_id", "store_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["visit_date", "2018-09-12 00:00:00"], ["visit_time", "2000-01-01 16:04:00"], ["comment_type", "Complaint"], ["source", "800#"], ["urgent", "General"], ["case_number", "12345"], ["first_issue", "Speed"], ["first_issue_comment", "SLOW"], ["second_issue", "Clean"], ["second_issue_comment", "DIRTY"], ["third_issue", "Nice"], ["third_issue_comment", "MEAN"], ["contact_type", "Phone"], ["visit_type", "DT"], ["employee_named", "Daniel"], ["guest_id", 1], ["store_id", 2], ["created_at", "2018-09-26 00:25:07.683788"], ["updated_at", "2018-09-26 00:25:07.683788"]]
+  ↳ app/controllers/comments_controller.rb:17
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:17
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 45ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 19:25:07 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 79ms (Views: 73.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2018-09-25 19:25:10 -0500
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/comments/index.html.erb:1
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.1ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  Rendered comments/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 76ms (Views: 70.9ms | ActiveRecord: 1.3ms)
+
+
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 19:26:11 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 85ms (Views: 78.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2018-09-25 19:26:16 -0500
+Processing by CommentsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/new.html.erb within layouts/application
+  [1m[36mStore Load (0.5ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/comments/new.html.erb:14
+  Rendered comments/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 89ms (Views: 84.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2018-09-25 19:27:15 -0500
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+/T2WmW0qS+HMJGPfI6yJvkBCAVTEfzNXKy2APWmPvoGhv+NIfDMzUuV52Ykkx88bClNsyJbVvrpu63S9hrTAg==", "guest"=>{"first_name"=>"ariana", "last_name"=>"hernandez", "email"=>"arianahernandez926@yahoo.com", "phone"=>"2102689420"}, "comment"=>{"store_id"=>"12", "visit_date"=>"2018-09-12", "visit_time"=>"17:05", "comment_type"=>"Complaint", "source"=>"800#", "urgent"=>"General", "case_number"=>"45983", "first_issue"=>"Nice", "first_issue_comment"=>"Mean", "second_issue"=>"", "second_issue_comment"=>"", "third_issue"=>"", "third_issue_comment"=>"", "contact_type"=>"Phone", "visit_type"=>"DT", "employee_named"=>"Ariana", "status"=>"Open"}, "commit"=>"Create Comment"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."email" = ? LIMIT ?[0m  [["email", "arianahernandez926@yahoo.com"], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:13
+  [1m[36mGuest Create (0.4ms)[0m  [1m[32mINSERT INTO "guests" ("email", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["email", "arianahernandez926@yahoo.com"], ["created_at", "2018-09-26 00:27:15.123549"], ["updated_at", "2018-09-26 00:27:15.123549"]]
+  ↳ app/controllers/comments_controller.rb:13
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:14
+  [1m[36mGuest Update (0.4ms)[0m  [1m[33mUPDATE "guests" SET "first_name" = ?, "last_name" = ?, "phone" = ?, "updated_at" = ? WHERE "guests"."id" = ?[0m  [["first_name", "ariana"], ["last_name", "hernandez"], ["phone", "2102689420"], ["updated_at", "2018-09-26 00:27:15.129832"], ["id", 2]]
+  ↳ app/controllers/comments_controller.rb:14
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:15
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/comments_controller.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:17
+  [1m[36mGuest Load (0.1ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:17
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("visit_date", "visit_time", "comment_type", "source", "urgent", "case_number", "first_issue", "first_issue_comment", "second_issue", "second_issue_comment", "third_issue", "third_issue_comment", "contact_type", "visit_type", "employee_named", "guest_id", "store_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["visit_date", "2018-09-12 00:00:00"], ["visit_time", "2000-01-01 17:05:00"], ["comment_type", "Complaint"], ["source", "800#"], ["urgent", "General"], ["case_number", "45983"], ["first_issue", "Nice"], ["first_issue_comment", "Mean"], ["second_issue", ""], ["second_issue_comment", ""], ["third_issue", ""], ["third_issue_comment", ""], ["contact_type", "Phone"], ["visit_type", "DT"], ["employee_named", "Ariana"], ["guest_id", 2], ["store_id", 12], ["created_at", "2018-09-26 00:27:15.140493"], ["updated_at", "2018-09-26 00:27:15.140493"]]
+  ↳ app/controllers/comments_controller.rb:17
+  [1m[35m (615.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:17
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 638ms (ActiveRecord: 619.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 19:27:15 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 56ms (Views: 51.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2018-09-25 19:27:20 -0500
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/comments/index.html.erb:1
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.1ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  Rendered comments/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 89ms (Views: 84.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 19:27:26 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 111ms (Views: 104.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stores" for 127.0.0.1 at 2018-09-25 19:27:27 -0500
+Processing by StoresController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.5ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 1]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 2]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 3]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 4]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 5]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 6]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 7]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 8]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 9]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 10]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 11]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 12]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 13]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 14]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 15]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 16]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 17]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 18]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 19]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 20]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 21]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 22]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 23]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 24]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 25]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 26]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 27]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 28]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 29]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 30]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 31]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 32]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 33]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 34]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 35]]
+  ↳ app/views/stores/index.html.erb:3
+  Rendered stores/index.html.erb within layouts/application (47.1ms)
+Completed 200 OK in 119ms (Views: 107.0ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 19:27:33 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 85ms (Views: 78.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2018-09-25 19:27:34 -0500
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/comments/index.html.erb:1
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.4ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  Rendered comments/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 95ms (Views: 88.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 19:29:25 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 85ms (Views: 78.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/stores" for 127.0.0.1 at 2018-09-25 19:32:47 -0500
+Processing by StoresController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.7ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:1
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 1]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 2]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 3]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 4]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 5]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 6]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 7]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 8]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 9]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 10]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 11]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 12]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 13]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 14]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 15]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 16]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 17]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 18]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 19]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 20]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 21]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 22]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 23]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 24]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 25]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 26]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 27]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 28]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 29]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 30]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 31]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 32]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 33]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 34]]
+  ↳ app/views/stores/index.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 35]]
+  ↳ app/views/stores/index.html.erb:3
+  Rendered stores/index.html.erb within layouts/application (51.2ms)
+Completed 200 OK in 116ms (Views: 104.7ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 19:33:07 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 90ms (Views: 84.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stores" for 127.0.0.1 at 2018-09-25 19:37:09 -0500
+Processing by StoresController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.6ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:2
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 1]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 2]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 3]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 4]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 5]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 6]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 7]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 8]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 9]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 10]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 11]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 12]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 13]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 14]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 15]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 16]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 17]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 18]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 19]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 20]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 21]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 22]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 23]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 24]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 25]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 26]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 27]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 28]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 29]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 30]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 31]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 32]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 33]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 34]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 35]]
+  ↳ app/views/stores/index.html.erb:6
+  Rendered stores/index.html.erb within layouts/application (52.5ms)
+Completed 200 OK in 113ms (Views: 101.1ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2018-09-25 20:17:19 -0500
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/comments/index.html.erb:1
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.1ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  Rendered comments/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 105ms (Views: 99.5ms | ActiveRecord: 1.2ms)
+
+
+Started PUT "/comments/1" for 127.0.0.1 at 2018-09-25 20:17:21 -0500
+Processing by CommentsController#update as HTML
+  Parameters: {"authenticity_token"=>"M0HjtIQZ3h6bkkSEj/9P5PTQ6Zj8hWqOCvrLniZKTfnB90VPbYlmb3UWi975aVHdmHBNJiwJibOeRB1EJBlU7w==", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:27
+  Rendering comments/update.html.erb within layouts/application
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/update.html.erb:2
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/update.html.erb:3
+  Rendered comments/update.html.erb within layouts/application (113.6ms)
+Completed 200 OK in 214ms (Views: 165.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/comments/1" for 127.0.0.1 at 2018-09-25 20:17:47 -0500
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:22
+  Rendering comments/show.html.erb within layouts/application
+  [1m[36mGuest Load (0.1ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/show.html.erb:3
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/show.html.erb:6
+  [1m[36mCommentUpdate Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "comment_updates" WHERE "comment_updates"."comment_id" = ? LIMIT ?[0m  [["comment_id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/show.html.erb:8
+  Rendered comments/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 89ms (Views: 76.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 20:17:55 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 77ms (Views: 65.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2018-09-25 20:17:58 -0500
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/comments/index.html.erb:1
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  Rendered comments/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 91ms (Views: 84.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 20:18:07 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 74ms (Views: 68.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2018-09-25 20:18:09 -0500
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/comments/index.html.erb:1
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.4ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.3ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  Rendered comments/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 80ms (Views: 73.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 20:20:52 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 67ms (Views: 53.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2018-09-25 20:20:55 -0500
+Processing by CommentsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/new.html.erb within layouts/application
+  [1m[36mStore Load (0.5ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/comments/new.html.erb:14
+  Rendered comments/new.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 155ms (Views: 76.6ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2018-09-25 20:21:24 -0500
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gKfkp16jriLZOSSNEdFcrJhn50xWNPnq0qpaIoiW8DN91e1wGufLwBWcUmRJzPG2DU+i+id+U91nvUHwiyodyw==", "guest"=>{"first_name"=>"Mina", "last_name"=>"Hernandez", "email"=>"", "phone"=>"2103555629"}, "comment"=>{"store_id"=>"3", "visit_date"=>"2018-09-06", "visit_time"=>"05:05", "comment_type"=>"Complaint", "source"=>"800#", "urgent"=>"General", "case_number"=>"12345", "first_issue"=>"Nice", "first_issue_comment"=>"Mean", "second_issue"=>"", "second_issue_comment"=>"", "third_issue"=>"", "third_issue_comment"=>"", "contact_type"=>"Phone", "visit_type"=>"DT", "employee_named"=>"Mina", "status"=>"Open"}, "commit"=>"Create Comment"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mGuest Load (0.3ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:13
+  [1m[36mGuest Create (0.6ms)[0m  [1m[32mINSERT INTO "guests" ("email", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["email", ""], ["created_at", "2018-09-26 01:21:24.820661"], ["updated_at", "2018-09-26 01:21:24.820661"]]
+  ↳ app/controllers/comments_controller.rb:13
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:14
+  [1m[36mGuest Update (0.5ms)[0m  [1m[33mUPDATE "guests" SET "first_name" = ?, "last_name" = ?, "phone" = ?, "updated_at" = ? WHERE "guests"."id" = ?[0m  [["first_name", "Mina"], ["last_name", "Hernandez"], ["phone", "2103555629"], ["updated_at", "2018-09-26 01:21:24.825857"], ["id", 3]]
+  ↳ app/controllers/comments_controller.rb:14
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:15
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:15
+  [1m[36mComment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."case_number" = ? LIMIT ?[0m  [["case_number", "12345"], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/comments_controller.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:17
+  [1m[36mGuest Load (0.3ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:17
+  [1m[36mComment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."case_number" = ? LIMIT ?[0m  [["case_number", "12345"], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/comments_controller.rb:17
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 33ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 20:21:24 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 65ms (Views: 60.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2018-09-25 20:21:43 -0500
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/comments/index.html.erb:1
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  Rendered comments/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 88ms (Views: 82.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 20:22:17 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 82ms (Views: 76.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stores" for 127.0.0.1 at 2018-09-25 20:23:32 -0500
+Processing by StoresController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.5ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:2
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 1]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 2]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 3]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 4]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 5]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 6]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 7]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 8]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 9]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 10]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 11]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 12]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 13]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 14]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 15]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 16]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 17]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 18]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 19]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 20]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 21]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 22]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 23]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 24]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 25]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 26]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 27]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 28]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 29]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 30]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 31]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 32]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 33]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 34]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 35]]
+  ↳ app/views/stores/index.html.erb:6
+  Rendered stores/index.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 113ms (Views: 100.4ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 20:24:03 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 81ms (Views: 74.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2018-09-25 20:24:06 -0500
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/comments/index.html.erb:1
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  Rendered comments/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 78ms (Views: 72.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/comments/2" for 127.0.0.1 at 2018-09-25 20:24:07 -0500
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:22
+  Rendering comments/show.html.erb within layouts/application
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/show.html.erb:3
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/comments/show.html.erb:6
+  [1m[36mCommentUpdate Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "comment_updates" WHERE "comment_updates"."comment_id" = ? LIMIT ?[0m  [["comment_id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/show.html.erb:8
+  Rendered comments/show.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 105ms (Views: 97.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 20:24:35 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 80ms (Views: 73.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2018-09-25 20:26:01 -0500
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/comments/index.html.erb:1
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.3ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:3
+  [1m[36mGuest Load (0.3ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  Rendered comments/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 84ms (Views: 78.6ms | ActiveRecord: 1.4ms)
+
+
+Started PUT "/comments/1" for 127.0.0.1 at 2018-09-25 20:26:02 -0500
+Processing by CommentsController#update as HTML
+  Parameters: {"authenticity_token"=>"52O7wD54pkOQetyXZWNwel4z42wyb2xhk20RQpopsVoV1R071+geMn7+E80T9W5DMpNH0uLjj1wH08eYmHqoTA==", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:27
+  Rendering comments/update.html.erb within layouts/application
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/update.html.erb:2
+  [1m[36mGuest Load (0.3ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/update.html.erb:3
+  Rendered comments/update.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 95ms (Views: 80.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 20:27:42 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 77ms (Views: 71.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2018-09-25 20:27:45 -0500
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/comments/index.html.erb:1
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:5
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:5
+  Rendered comments/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 89ms (Views: 84.8ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/comments/1" for 127.0.0.1 at 2018-09-25 20:27:48 -0500
+Processing by CommentsController#update as HTML
+  Parameters: {"authenticity_token"=>"0Illi3fn44oJdC37AaX174FILZCqgmUOJhsnbxgNN3MiP8Nwnndb++fw4qF3M+vW7eiJLnoOhjOypfG1Gl4uZQ==", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:27
+  Rendering comments/update.html.erb within layouts/application
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/update.html.erb:2
+  [1m[36mGuest Load (0.1ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/update.html.erb:3
+  Rendered comments/update.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 76ms (Views: 71.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/comment_updates" for 127.0.0.1 at 2018-09-25 20:28:00 -0500
+Processing by CommentUpdatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TGvSCWot7MmwdKlE5Vqf4juQb84mysCvf4WMpaGdgLe+3XTyg71UuF7wZh6TzIHbVzDLcPZGI5LrO1p/o86ZoQ==", "comment_update"=>{"update_date"=>"2018-09-25", "update_type"=>"phone", "employee_name"=>"Bob", "current_update"=>"dafd", "comment_id"=>"1"}, "comment"=>{"status"=>"Closed"}, "commit"=>"Create Comment update"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comment_updates_controller.rb:9
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comment_updates_controller.rb:9
+  [1m[36mCommentUpdate Create (0.6ms)[0m  [1m[32mINSERT INTO "comment_updates" ("comment_id", "update_date", "update_type", "current_update", "employee_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["comment_id", 1], ["update_date", "2018-09-25 00:00:00"], ["update_type", "phone"], ["current_update", "dafd"], ["employee_name", "Bob"], ["created_at", "2018-09-26 01:28:00.223173"], ["updated_at", "2018-09-26 01:28:00.223173"]]
+  ↳ app/controllers/comment_updates_controller.rb:9
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comment_updates_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comment_updates_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comment_updates_controller.rb:10
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comment_updates_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comment_updates_controller.rb:14
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comment_updates_controller.rb:14
+  [1m[36mGuest Load (0.1ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comment_updates_controller.rb:14
+  [1m[36mComment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."case_number" = ? AND "comments"."id" != ? LIMIT ?[0m  [["case_number", "12345"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comment_updates_controller.rb:14
+  [1m[36mComment Update (0.5ms)[0m  [1m[33mUPDATE "comments" SET "status" = ?, "updated_at" = ? WHERE "comments"."id" = ?[0m  [["status", "Closed"], ["updated_at", "2018-09-26 01:28:00.237603"], ["id", 1]]
+  ↳ app/controllers/comment_updates_controller.rb:14
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comment_updates_controller.rb:14
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 24ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 20:28:00 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 68ms (Views: 63.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2018-09-25 20:28:05 -0500
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/comments/index.html.erb:1
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:5
+  Rendered comments/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 94ms (Views: 89.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 20:29:33 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 67ms (Views: 61.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2018-09-25 20:29:37 -0500
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/comments/index.html.erb:1
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mGuest Load (0.1ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:5
+  Rendered comments/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 80ms (Views: 76.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 20:31:04 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 70ms (Views: 64.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stores" for 127.0.0.1 at 2018-09-25 20:31:11 -0500
+Processing by StoresController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.5ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:2
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 1]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 2]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 3]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 4]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 5]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 6]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 7]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 8]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 9]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 10]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 11]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 12]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 13]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 14]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 15]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 16]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 17]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 18]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 19]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 20]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 21]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 22]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 23]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 24]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 25]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 26]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 27]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 28]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 29]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 30]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 31]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 32]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 33]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 34]]
+  ↳ app/views/stores/index.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."store_id" = ?[0m  [["store_id", 35]]
+  ↳ app/views/stores/index.html.erb:6
+  Rendered stores/index.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 117ms (Views: 105.8ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 20:31:44 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 86ms (Views: 79.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2018-09-25 20:31:48 -0500
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/comments/index.html.erb:1
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:5
+  Rendered comments/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 89ms (Views: 84.7ms | ActiveRecord: 0.9ms)
+
+
+Started PUT "/comments/2" for 127.0.0.1 at 2018-09-25 20:31:51 -0500
+Processing by CommentsController#update as HTML
+  Parameters: {"authenticity_token"=>"t6I3OFWpHpn5vFJUnkaw62+T4DIhxfJ+2plKD/QCCg1FFJHDvDmm6Bc4nQ7o0K7SAzNEjPFJEUNOJ5zV9lETGw==", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:27
+  Rendering comments/update.html.erb within layouts/application
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/comments/update.html.erb:2
+  [1m[36mGuest Load (0.1ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/update.html.erb:3
+  Rendered comments/update.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 84ms (Views: 79.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-09-25 20:33:31 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 75ms (Views: 69.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2018-09-25 20:33:32 -0500
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/comments/index.html.erb:1
+  [1m[36mStore Load (0.4ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:4
+  [1m[36mGuest Load (0.2ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/index.html.erb:5
+  Rendered comments/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 78ms (Views: 73.1ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/comments/2" for 127.0.0.1 at 2018-09-25 20:33:34 -0500
+Processing by CommentsController#update as HTML
+  Parameters: {"authenticity_token"=>"kTIBw+EUKa8MPNcVJKBmX2xKGRRBykrAWNh9cJX76m1jhKc4CISR3uK4GE9SNnhmAOq9qpFGqf3MZquql6jzew==", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:27
+  Rendering comments/update.html.erb within layouts/application
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/comments/update.html.erb:2
+  [1m[36mGuest Load (0.1ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" WHERE "guests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/update.html.erb:3
+  Rendered comments/update.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 75ms (Views: 70.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/comment_updates" for 127.0.0.1 at 2018-09-25 20:33:55 -0500
+Processing by CommentUpdatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0TiE2zo8FgD9ejGYmDAlwsDGV9bBdajJkrLF8o3hP2kjjiIg06yucRP+/sLupjv7rGbzaBH5S/QGDBMoj7Imfw==", "comment_update"=>{"update_date"=>"2018-09-12", "update_type"=>"Phone", "employee_name"=>"Bob", "current_update"=>"dsafd", "comment_id"=>"2"}, "commit"=>"Create Comment update"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comment_updates_controller.rb:9
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comment_updates_controller.rb:9
+  [1m[36mCommentUpdate Create (0.5ms)[0m  [1m[32mINSERT INTO "comment_updates" ("comment_id", "update_date", "update_type", "current_update", "employee_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["comment_id", 2], ["update_date", "2018-09-12 00:00:00"], ["update_type", "Phone"], ["current_update", "dsafd"], ["employee_name", "Bob"], ["created_at", "2018-09-26 01:33:55.397313"], ["updated_at", "2018-09-26 01:33:55.397313"]]
+  ↳ app/controllers/comment_updates_controller.rb:9
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comment_updates_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comment_updates_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comment_updates_controller.rb:10
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 2.3ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/comment_updates_controller.rb:11:in `create'
